@@ -1,3 +1,7 @@
 .content-main {
-    /* background-color: red; */
+   padding: 5px !important;
+}
+pre {
+   white-space: pre-wrap;
+   font-family: Arial !important;
 }

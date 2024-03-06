@@ -1,16 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/SideNav.css";
+import "../css/SubMenu.css";
 
 function SubMenu(prop) {
-    console.log(prop.subMenu,'hhhhhhhhhhhhhhh')
+
   return (
-    <div className="main">
+    <div className="sub-main">
       <nav>
-        <ul>
-          {prop.subMenu.subMenu.map((x) => (
-            <li key={x.name}>
-              <Link to={"/" +prop.subMenu.path +"/"+ x.name}>{x.name}</Link>
+        <ul className="ul-list">
+          {prop.subMenu.map((x) => (
+            <li key={x.name}
+              className={`list-sub 
+            ${(prop.location.pathname == x.path)
+                && 'selected' }`}>
+              <Link className={`link ${(prop.location.pathname == x.path)
+                && 'selected' }`} to={x.path}>
+                {x.name}
+              </Link>
             </li>
           ))}
         </ul>

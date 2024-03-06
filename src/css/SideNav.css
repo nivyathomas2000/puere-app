@@ -1,3 +1,73 @@
 .main {
      background-color: black;
+     padding-right: 0px !important;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+}
+
+.title-content {
+     flex: 0 0 auto;
+}
+
+.nav-div {
+     flex: 1;
+     overflow-y: auto;
+}
+
+.title {
+     color: white;
+     text-align: center;
+     font-size: 2rem;
+}
+
+.sub-title {
+     color: #33f088;
+     padding: 5px;
+     font-size: 12px;
+}
+
+.ul-list {
+     padding: 0px;
+}
+
+.list-sub {
+     display: flex;
+     justify-content: space-between;
+     height: 40px;
+     align-items: center;
+     font-size: 18px;
+}
+
+.selected {
+     background-color: #1D6F42;
+     color: white !important;
+}
+
+.show {
+     background-color: rgb(110, 109, 109);
+     color: white !important;
+     font-weight: 600;
+     /* font-size: 18px; */
+}
+
+.list-sub:hover {
+     /* background-color:rgb(232, 230, 230); */
+     border-left: .5rem solid #1D6F42;
+     color: white;
+     /* font-size: 18px; */
+     /* font-weight: bold; */
+}
+
+.link {
+     text-decoration: none !important;
+     color: rgb(205, 202, 202);
+     padding: .5rem;
+     width: 100%;
+}
+.link:hover{
+     color: white;
+}
+.icon-dropdown {
+     padding-right: 4px;
 }
