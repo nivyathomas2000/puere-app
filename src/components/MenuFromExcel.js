@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 function MenuFromExcel({ item, location }) {
-    console.log(item, 'item')
     const [isExpanded, setDropDown] = useState(false)
     const ExpandOrCollapse = () => {
         if (item.isSubMenuPresent) {

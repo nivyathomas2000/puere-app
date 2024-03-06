@@ -15,7 +15,7 @@ function ExcelReader({ initialData, onSetData }) {
             element.data.length > 0 &&
             setSubMenuData(element)),
         });
-      });      
+      });
       onSetData(menuContentData);
     }
   };
@@ -59,15 +59,28 @@ function ExcelReader({ initialData, onSetData }) {
         };
   };
   const addCustomMenu = () => {
-    let temp =[];
+    let temp = [];
     if (temp != null) {
       temp.push({
         menu: "Home",
         path: initialPath,
-        isSubMenuPresent:false
+        isSubMenuPresent: false,
       });
     }
     return temp;
+  };
+  const getContentInHtml = (jsonData, sheet) => {
+    if (jsonData && jsonData.length > 0) {
+      let length = jsonData.length;
+      for (let i = 2; i <= length; i++) {
+        // let gt = B{i};
+        // if (sheet.gt) {
+          
+        //   jsonData[i - 1].push(sheet.gt.h);
+        // }
+      }
+    }
+    return jsonData;
   };
   useEffect(() => {
     // Path to your Excel file
@@ -91,6 +104,8 @@ function ExcelReader({ initialData, onSetData }) {
           const jsonData = XLSX.utils
             .sheet_to_json(sheet, { header: 1 })
             .filter((row) => row.length > 0);
+          let data = getContentInHtml(jsonData, sheet);
+          console.log(data, "jsonData");
           temData.push({ menu: sheetName, data: jsonData });
         }
         onSetData1(temData);

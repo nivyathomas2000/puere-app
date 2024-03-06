@@ -1,5 +1,4 @@
 import React from "react";
-import '../css/Content.css';
 
 function Content(prop){
     console.log(prop.item.content, 'prop.item.content')

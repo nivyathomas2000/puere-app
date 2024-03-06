@@ -1,5 +1,6 @@
 .content-main {
-   padding: 5px !important;
+   padding: 5px !important;   
+   background-color: rgb(230, 233, 230);
 }
 pre {
    white-space: pre-wrap;
