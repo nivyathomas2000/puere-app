@@ -1,6 +1,10 @@
-function Home(jsonData) {
+function Home() {
  
-    
+    return(
+      <>
+      Welcome Home
+      </>
+    )
   }
   
   export default Home;

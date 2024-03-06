@@ -6,7 +6,7 @@ import MenuFromExcel from "./MenuFromExcel";
 function MainSideNav({ menuData }) {
   const location = useLocation();
   return (
-    <div className="main col-2 col-md-2 col-lg-2">
+    <div className="main col-6 col-md-2 col-lg-2">
     <div className="title-content">
     <h1 className="title">PÜREE</h1>
       <p className="sub-title">
