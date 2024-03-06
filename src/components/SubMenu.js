@@ -3,18 +3,24 @@ import { Link } from "react-router-dom";
 import "../css/SubMenu.css";
 
 function SubMenu(prop) {
-
   return (
     <div className="sub-main">
       <nav>
         <ul className="ul-list">
           {prop.subMenu.map((x) => (
-            <li key={x.name}
+            <li
+              key={x.name}
               className={`list-sub 
-            ${(prop.location.pathname == x.path)
-                && 'selected' }`}>
-              <Link className={`link ${(prop.location.pathname == x.path)
-                && 'selected' }`} to={x.path}>
+            ${prop.location.pathname == x.path && "selected"}`}
+              style={{ borderBottom: "none" }}
+            >
+              <Link
+                className={`link ${
+                  prop.location.pathname == x.path && "selected"
+                }`}
+                to={x.path}
+                style={{ fontSize: "15px" }}
+              >
                 {x.name}
               </Link>
             </li>

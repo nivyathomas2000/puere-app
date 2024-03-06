@@ -34,18 +34,19 @@
 .list-sub {
      display: flex;
      justify-content: space-between;
-     height: 40px;
      align-items: center;
      font-size: 18px;
+     border-bottom: .5px solid #2f2e2e;
 }
 
 .selected {
      background-color: #1D6F42;
      color: white !important;
+     font-weight: 600;
 }
 
 .show {
-     background-color: rgb(110, 109, 109);
+     background-color: rgb(54, 54, 54);
      color: white !important;
      font-weight: 600;
      /* font-size: 18px; */
@@ -61,13 +62,14 @@
 
 .link {
      text-decoration: none !important;
-     color: rgb(205, 202, 202);
+     color: rgb(148, 147, 147);
      padding: .5rem;
      width: 100%;
 }
 .link:hover{
      color: white;
 }
+
 .icon-dropdown {
      padding-right: 4px;
 }

@@ -16,11 +16,9 @@ function MainSideNav({ menuData }) {
       <nav className="nav-div">
         <ul className="ul-list">
           <>
-            <li className={`list-sub 
-                ${(location.pathname == '/')
-              && 'selected'}`}>
+            {/* <li className='list-sub'>
               <Link className="link" to={"/"}>Home</Link>
-            </li>
+            </li> */}
             {menuData.map((item, index) => (
               <MenuFromExcel key={index} item={item} location={location} />
             ))}
