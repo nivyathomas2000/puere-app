@@ -87,7 +87,7 @@ function ExcelReader({ initialData, onSetData }) {
   useEffect(() => {
     // Path to your Excel file
     const excelFilePath =
-      process.env.PUBLIC_URL + "Templates/InventoryList.xlsx";
+      process.env.PUBLIC_URL + "Templates/Pueree.xlsx";
     let temData = [];
     // Read the Excel file
     const readFile = async () => {
