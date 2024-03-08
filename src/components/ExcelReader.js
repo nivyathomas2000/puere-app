@@ -38,6 +38,7 @@ function ExcelReader({ initialData, onSetData }) {
           name: content[0] != "" && content[0],
           path: getPath(element, content),
           content: content[1],
+          html:content[2]
         });
       } else if (index != 0 && content[0] == null && content[1]) {
         subMenuDetails.push(content[1]);
@@ -50,6 +51,7 @@ function ExcelReader({ initialData, onSetData }) {
           content: subMenuDetails[0],
           isSubMenuPresent: false,
           path: initialPath + element.menu.toLowerCase(),
+          html:element.data[1][2]
         }
       : {
           subMenu: subMenuDetails,
@@ -73,11 +75,11 @@ function ExcelReader({ initialData, onSetData }) {
     if (jsonData && jsonData.length > 0) {
       let length = jsonData.length;
       for (let i = 2; i <= length; i++) {
-        // let gt = B{i};
-        // if (sheet.gt) {
-          
-        //   jsonData[i - 1].push(sheet.gt.h);
-        // }
+        let gt = 'B' + i;
+        if (sheet[gt]) {
+         let value = sheet[gt]
+          jsonData[i - 1].push(value.h);
+        }
       }
     }
     return jsonData;

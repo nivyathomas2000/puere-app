@@ -2,7 +2,7 @@ import React from "react";
 
 function Content(prop){
     console.log(prop.item.content, 'prop.item.content')
-    let content=prop.item.content ? prop.item.content:"No Data Available"
+    let content=prop.item.html ? prop.item.html:"No Data Available"
      return (
         <div className="content-main col-6 col-md-10 col-lg-10">
             {/* <p>{prop.item.content ? prop.item.content:"No Data Available"}</p> */}
