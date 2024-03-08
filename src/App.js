@@ -2,7 +2,7 @@ import "./App.css";
 import MainSideNav from "./components/MainSideNav";
 import Content from "./components/Content";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ExcelReader from "./components/ExcelReader";
+import MenuExcelReader from "./components/MenuExcelReader";
 import { useState } from "react";
 import {
   BrowserRouter as Router,
@@ -11,6 +11,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./components/Home";
+import InventoryExcelReader from "./components/InventoryExcelReader";
 
 function App() {
   const [data, setData] = useState([]);
@@ -25,25 +26,27 @@ function App() {
 
   const setRoute = () => {
     if (data != null) {
-      return data.map((item, index) => {        
+      return data.map((item, index) => {
         if (item.hasOwnProperty("subMenu")) {
           return item.subMenu.map((x, i) => {
             return setRouter(`${index}-${i}`, x, <Content item={x} />);
           });
         } else if (item.menu == "Home") {
           return setRouter(index, item, <Home />);
+        }
+        else if (item.menu == "Inventory") {
+          return setRouter(index, item, <InventoryExcelReader />);
         } else {
           return setRouter(index, item, <Content item={item} />);
         }
       });
     }
   };
-  
+
   return (
     <div className="row">
-      <ExcelReader
+      <MenuExcelReader
         key={"excelReader"}
-        initialData={data}
         onSetData={onDataRead}
       />
       <MainSideNav key={"main"} menuData={data}></MainSideNav>
