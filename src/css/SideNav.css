@@ -62,12 +62,13 @@
 
 .link {
      text-decoration: none !important;
-     color: rgb(148, 147, 147);
+     /* color: rgb(148, 147, 147); */
+     color: rgb(213, 210, 210);
      padding: .5rem;
      width: 100%;
 }
 .link:hover{
-     color: white;
+     color: white !important;
 }
 
 .icon-dropdown {

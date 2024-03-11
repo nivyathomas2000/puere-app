@@ -6,10 +6,10 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 function MenuExcelReader({ onSetData }) {
 
     const onDataRead = (dataRead) => {
-        onSetData1(dataRead);
+        SetData(dataRead);
     };
     const initialPath = "/";
-    const onSetData1 = (tempData) => {
+    const SetData = (tempData) => {
         if (tempData) {
             console.log(tempData, "temp");
             let menuContentData = addCustomMenu();

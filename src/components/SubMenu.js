@@ -19,7 +19,7 @@ function SubMenu(prop) {
                   prop.location.pathname == x.path && "selected"
                 }`}
                 to={x.path}
-                style={{ fontSize: "15px" }}
+                style={{ fontSize: "15px", color:"#999999" }}
               >
                 {x.name}
               </Link>
