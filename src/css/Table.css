@@ -1,20 +1,22 @@
 .edit-btn-div{
-    height: 90px;
+    height: 100px;
+    margin-right: 18px;
 }
 .title-header{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.table-container {    
-    max-height: 80vh;
+.table-container {  
+    max-height: 71vh;
     overflow-y: auto;
 }
 table{
     width: 100%;
 }
-/* tbody{
-    overflow-y: auto;
-} */
+tbody{
+    /* max-height: 60vh; */
+    /* overflow-y: auto; */
+}
 .table-header {
     /* background-color: #1D6F42; */
     /* padding: 10px;
@@ -40,14 +42,20 @@ thead {
 }
 thead {
     /* overflow-y: hidden; */
-    position: sticky; /*Make the header sticky*/
+    position: sticky; 
+    /*Make the header sticky*/
     top: 0; 
     background-color: #1D6F42;
     color: white;
     border: 1px solid black;
+   
     /* Stick to the top */
     /* background-color: #f2f2f2; */
   }
   th{
     border: 1px solid black;
+  }
+  tbody{
+    max-height: 60vh;
+    overflow-y: auto;
   }

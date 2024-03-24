@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import InventoryExcelReader from "./components/InventoryExcelReader";
+import Header from "./components/Header";
 
 function App() {
   const [data, setData] = useState([]);
@@ -48,11 +49,16 @@ function App() {
       <MenuExcelReader
         key={"excelReader"}
         onSetData={onDataRead}
+        file = {process.env.PUBLIC_URL + "/Templates/pueree.xlsx"}
       />
-      <MainSideNav key={"main"} menuData={data}></MainSideNav>
+      <MainSideNav className="col-6 col-md-2 col-lg-10" key={"main"} menuData={data}></MainSideNav>
+      <div className=" col-6 col-md-10 col-lg-10">
+      <Header onSetData={onDataRead}></Header>
       <Routes>
         <>{setRoute()}</>
       </Routes>
+      </div>
+      
     </div>
   );
 }

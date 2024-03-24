@@ -1,6 +1,7 @@
 .content-main {
    padding: 5px !important;   
    background-color: rgb(230, 233, 230);
+   height: 92vh;
 }
 pre {
    white-space: pre-wrap;

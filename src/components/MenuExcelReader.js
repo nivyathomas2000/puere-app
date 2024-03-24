@@ -3,9 +3,9 @@ import React from 'react'
 import ExcelReader from './ExcelReader';
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
-function MenuExcelReader({ onSetData }) {
-
+function MenuExcelReader({ onSetData, file }) {
     const onDataRead = (dataRead) => {
+        localStorage.setItem("appData", JSON.stringify(dataRead));
         SetData(dataRead);
     };
     const initialPath = "/";
@@ -83,7 +83,7 @@ function MenuExcelReader({ onSetData }) {
     };
     return (
         <div>
-            <ExcelReader onSetData={onDataRead} filePath="/Templates/Pueree.xlsx" />
+            <ExcelReader onSetData={onDataRead} type="appData" filePath={file} />
         </div>
     )
 }
