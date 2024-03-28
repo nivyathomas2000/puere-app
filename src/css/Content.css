@@ -1,9 +1,41 @@
 .content-main {
    padding: 5px !important;   
    background-color: rgb(230, 233, 230);
-   height: 92vh;
+   height: 91vh;
+   overflow-y: auto;
 }
 pre {
    white-space: pre-wrap;
    font-family: Arial !important;
+   padding: .5rem 0rem;
+}
+
+.edit-btn-content,
+.save-cnt-btn,
+.cancel-btn{
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-right: .5rem;
+   padding: 5px 10px;
+   background-color: #1D6F42;
+   border:1px solid #1D6F42;
+   color: #ffff;   
+}
+.edit-btn-content{
+   float: left;
+}
+.cancel-btn{
+   width: 100px;
+   background-color: #ffff;
+   border:1px solid #1D6F42;
+   color: #1D6F42; 
+}
+.save-cnt-btn{
+   width: 100px;
+}
+.save-btn-div{
+   margin: 1rem .5rem .5rem .5rem;
+   display: flex;
+   justify-content: center;
 }

@@ -1,0 +1,7 @@
+.drdw-select, .input-select{    
+    height: 30px;
+    border: 1px solid #1D6F42;
+}
+.drdw-select{
+    min-width: 100% ;
+}

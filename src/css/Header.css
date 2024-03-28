@@ -1,5 +1,27 @@
 .header-nav{
-    height: 8vh;
+    height: 9vh;
     padding: 5px;
-    /* background-color: rgb(31, 5, 5); */
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* padding: .5rem; */
+}
+
+.edit-btn,
+.exit-btn{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: .5rem;
+    padding: 5px 5px;
+    background-color: #1D6F42;
+    border:1px solid #1D6F42;
+    color: #ffff;
+    width: 20%;
+}
+.exit-btn{
+    background-color: #252424 !important;
+    border:2px solid #169c52;
+    color: white;
 }

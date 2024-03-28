@@ -1,6 +1,7 @@
 import SubMenu from "./SubMenu";
 import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 function MenuFromExcel({ item, location }) {
     const [isExpanded, setDropDown] = useState(false)
@@ -29,8 +30,8 @@ function MenuFromExcel({ item, location }) {
                     </NavLink>
                     <div className="icon-dropdown">
                         {(item.isSubMenuPresent && isExpanded)
-                            ? item.iconOpened
-                            : (item.isSubMenuPresent && item.iconClosed)
+                            ? <IoMdArrowDropup style={{ color: "white" }} />
+                            : (item.isSubMenuPresent && <IoMdArrowDropdown style={{ color: "white" }} />)
                         }
                     </div>
                 </li>

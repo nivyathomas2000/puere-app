@@ -1,0 +1,124 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    /* horizontally center the content */
+    align-items: center;
+    /* vertically center the content */
+}
+
+.popup-content {
+    background-color: rgb(248, 245, 245);
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 60vh;
+    max-height: 60vh;
+    width: 25%;
+    border: 1px solid rgb(27, 26, 26);
+}
+
+.content-div {
+    padding: 20px;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-h {
+    font-size: 20px;
+    color: #17b15c;
+    background: rgb(38, 36, 36);
+    height: 8vh;
+    padding-top: 7px;
+    margin: 0px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-btn,
+.close-btn,
+.add-edit-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: .5rem;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 1.5px solid #17b15c;
+    color: #1D6F42;
+}
+
+.save-btn:hover,
+.close-btn:hover,
+.save-add-btn:hover {
+    opacity: .7;
+}
+
+.save-btn,
+.close-btn {
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.close-btn {
+    margin-right: 0px;
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.save-add-btn {
+    border-radius: 0px;
+    width: 20%;
+}
+
+.input-select {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #1D6F42;
+}
+
+.input-div {
+    /* margin-top: 1rem; */
+    width: 100%;
+    display: flex;
+}
+
+.save-btn,
+.save-add-btn,
+.add-edit-btn {
+    background-color: #1D6F42;
+    color: white;
+    border: none;
+}
+
+.save-add-btn:disabled {
+    opacity: .5;
+}
+
+.add-btn-div {
+    margin: 1rem .5rem .5rem .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* .add-edit-btn{
+    background-color: #1D6F42;
+    color: white;
+} */
+.add-drp-div {
+    margin: 1rem 0rem .5rem 0rem;
+}

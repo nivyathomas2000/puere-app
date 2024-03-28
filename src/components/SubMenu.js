@@ -9,7 +9,7 @@ function SubMenu(prop) {
         <ul className="ul-list">
           {prop.subMenu.map((x) => (
             <li
-              key={x.name}
+              key={x.menu}
               className={`list-sub 
             ${prop.location.pathname == x.path && "selected"}`}
               style={{ borderBottom: "none" }}
@@ -21,7 +21,7 @@ function SubMenu(prop) {
                 to={x.path}
                 style={{ fontSize: "15px", color:"#999999" }}
               >
-                {x.name}
+                {x.menu}
               </Link>
             </li>
           ))}

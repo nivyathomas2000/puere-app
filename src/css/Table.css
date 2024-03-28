@@ -39,12 +39,13 @@ thead {
     color: white;
     padding: .5rem;
     border-radius: .5rem;
+    width: 10%;
 }
 thead {
     /* overflow-y: hidden; */
-    position: sticky; 
+    /* position: sticky;  */
     /*Make the header sticky*/
-    top: 0; 
+    /* top: 0;  */
     background-color: #1D6F42;
     color: white;
     border: 1px solid black;
