@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    // This script will redirect to the root if the refresh doesn't work.
+    setTimeout(function() {
+      var path = window.location.pathname;
+      var redirectUrl = "/" + window.location.hash.substr(1);
+      if (path !== "/") {
+        window.location = redirectUrl;
+      }
+    }, 100);
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, follow this <a href="/">link</a>.</p>
+</body>
+</html>
