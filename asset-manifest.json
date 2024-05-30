@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nivyathomas2000/puere-app/static/css/main.f89a5219.css",
-    "main.js": "/nivyathomas2000/puere-app/static/js/main.4f305ac0.js",
-    "static/js/175.75b2e8eb.chunk.js": "/nivyathomas2000/puere-app/static/js/175.75b2e8eb.chunk.js",
-    "static/js/453.5d56456f.chunk.js": "/nivyathomas2000/puere-app/static/js/453.5d56456f.chunk.js",
-    "index.html": "/nivyathomas2000/puere-app/index.html",
-    "main.f89a5219.css.map": "/nivyathomas2000/puere-app/static/css/main.f89a5219.css.map",
-    "main.4f305ac0.js.map": "/nivyathomas2000/puere-app/static/js/main.4f305ac0.js.map",
-    "175.75b2e8eb.chunk.js.map": "/nivyathomas2000/puere-app/static/js/175.75b2e8eb.chunk.js.map",
-    "453.5d56456f.chunk.js.map": "/nivyathomas2000/puere-app/static/js/453.5d56456f.chunk.js.map"
+    "main.css": "/puere-app/static/css/main.f89a5219.css",
+    "main.js": "/puere-app/static/js/main.f0f48aaf.js",
+    "static/js/175.75b2e8eb.chunk.js": "/puere-app/static/js/175.75b2e8eb.chunk.js",
+    "static/js/453.5d56456f.chunk.js": "/puere-app/static/js/453.5d56456f.chunk.js",
+    "index.html": "/puere-app/index.html",
+    "main.f89a5219.css.map": "/puere-app/static/css/main.f89a5219.css.map",
+    "main.f0f48aaf.js.map": "/puere-app/static/js/main.f0f48aaf.js.map",
+    "175.75b2e8eb.chunk.js.map": "/puere-app/static/js/175.75b2e8eb.chunk.js.map",
+    "453.5d56456f.chunk.js.map": "/puere-app/static/js/453.5d56456f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f89a5219.css",
-    "static/js/main.4f305ac0.js"
+    "static/js/main.f0f48aaf.js"
   ]
 }
